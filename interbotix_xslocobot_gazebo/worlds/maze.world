@@ -123,7 +123,7 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <ambient>1 1 1 1</ambient>
+            <ambient>0 1 0 0</ambient>
           </material>
           <meta>
             <layer>0</layer>
@@ -168,7 +168,7 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <ambient>1 1 1 1</ambient>
+            <ambient>0 1 0 0</ambient>
           </material>
           <meta>
             <layer>0</layer>
@@ -213,7 +213,7 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <ambient>1 1 1 1</ambient>
+            <ambient>0 1 0 0</ambient>
           </material>
           <meta>
             <layer>0</layer>
@@ -258,7 +258,7 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <ambient>1 1 1 1</ambient>
+            <ambient>0 1 0 0</ambient>
           </material>
           <meta>
             <layer>0</layer>
@@ -283,7 +283,7 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <ambient>1 1 1 1</ambient>
+            <ambient>0 1 0 0</ambient>
           </material>
           <meta>
             <layer>0</layer>
@@ -322,7 +322,7 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <ambient>1 1 1 1</ambient>
+            <ambient>0 1 0 0</ambient>
           </material>
           <meta>
             <layer>0</layer>
@@ -361,7 +361,7 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <ambient>1 1 1 1</ambient>
+            <ambient>0 1 0 0</ambient>
           </material>
           <meta>
             <layer>0</layer>
@@ -430,6 +430,10 @@
             <shader type='pixel'>
               <normal_map>__default__</normal_map>
             </shader>
+            <ambient>1 0 0 0</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
           </material>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
@@ -491,22 +495,28 @@
           </surface>
         </collision>
       </link>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
     </model>
     <model name='Ball_1'>
       <link name='link_1'>
         <inertial>
-          <mass>0.000807828</mass>
+          <mass>0.00080783</mass>
           <inertia>
-            <ixx>7.00888e-07</ixx>
+            <ixx>7e-07</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>7.00888e-07</iyy>
+            <iyy>7e-07</iyy>
             <iyz>0</iyz>
-            <izz>7.00888e-07</izz>
+            <izz>7e-07</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <pose>-0.241531 0.202851 0.125 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
         <visual name='visual'>
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
@@ -520,7 +530,13 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <shader type='pixel'/>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>0 1 1 0</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
           </material>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
@@ -580,26 +596,29 @@
             </contact>
           </surface>
         </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
       </link>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
     </model>
     <model name='Ball_2'>
       <link name='link_1_clone'>
         <inertial>
-          <mass>0.000807828</mass>
+          <mass>0.00080783</mass>
           <inertia>
-            <ixx>7.00888e-07</ixx>
+            <ixx>7e-07</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>7.00888e-07</iyy>
+            <iyy>7e-07</iyy>
             <iyz>0</iyz>
-            <izz>7.00888e-07</izz>
+            <izz>7e-07</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <pose>-0.575084 -0.228906 0.125 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
         <visual name='visual'>
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
@@ -613,7 +632,13 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <shader type='pixel'/>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>1 1 0 0</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
           </material>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
@@ -673,26 +698,29 @@
             </contact>
           </surface>
         </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
       </link>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
     </model>
     <model name='Ball_3'>
       <link name='link_1_clone_clone'>
         <inertial>
-          <mass>0.000807828</mass>
+          <mass>0.00080783</mass>
           <inertia>
-            <ixx>7.00888e-07</ixx>
+            <ixx>7e-07</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>7.00888e-07</iyy>
+            <iyy>7e-07</iyy>
             <iyz>0</iyz>
-            <izz>7.00888e-07</izz>
+            <izz>7e-07</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <pose>-1.34939 -0.55566 0.125 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
         <visual name='visual'>
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
@@ -706,7 +734,13 @@
               <uri>file://media/materials/scripts/gazebo.material</uri>
               <name>Gazebo/Grey</name>
             </script>
-            <shader type='pixel'/>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>1 0 1 0</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
           </material>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
@@ -766,13 +800,9 @@
             </contact>
           </surface>
         </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.491172 1.10467 0.375 0 -0 0</pose>
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>
