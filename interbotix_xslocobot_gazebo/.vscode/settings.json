@@ -1,0 +1,7 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/bharat/catkin_ws/devel/lib/python3/dist-packages",
+        "/home/bharat/create3_ros1_ws/install_isolated/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
